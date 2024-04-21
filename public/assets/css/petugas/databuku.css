@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@500&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.line{
+    border-radius: 10px;
+    border-color: #40A2E3 !important;
+}
+
+.card{
+    background-color: #ddd;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-tambahdata{
+    background-color: #3F3D56;
+    font-weight: 400;
+    border: 2px solid #3F3D56;
+    color: #FFF6E9;
+    border-radius: 20px;
+}
+
+.btn-tambahdata:hover{
+    border: 2px solid #3F3D56;
+    color: #3F3D56;
+    transition: 0.5s;
+}

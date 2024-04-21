@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@500&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.home-title{
+    color: #40A2E3;
+}
+
+.carousel-inner{
+    height: 300px;
+    -webkit-box-shadow: 0 3px 14px rgba(34,34,34,.08), 0 8px 10px rgba(34,34,34,.1);
+    box-shadow: 0 3px 14px rgba(34,34,34,.08), 0 8px 10px rgba(34,34,34,.1);
+    border-radius: 16px;
+}
+
+.img-carousel{
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.category-title{
+    color:#40A2E3;
+}
+
+.btn-category{
+    color: #40A2E3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-category.active{
+    color: #3F3D56;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.search-input{
+    border: 1px solid #40A2E3;
+}
+
+.search-button{
+    border: 1px solid #40A2E3;
+    background-color: #40A2E3;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.search-button:hover{
+    border: 1px solid #40A2E3;
+    background-color: transparent;
+    color: #40A2E3;
+}
+
+.card-img-top{
+    height: 17rem;
+    border-radius: 10px;
+}
+
+.book-view{
+    text-decoration: none;
+}
+
+.card:hover{
+    transition: 0.2s;
+    scale: 1.1;
+    cursor:pointer;
+}

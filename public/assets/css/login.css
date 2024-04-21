@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@500&display=swap');
+
+body{
+    background-color: #40A2E3 ;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.card{
+    background-color: #eae8e8 ;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    padding: 0;
+}
+
+.btn-submit{
+    background-color: #40A2E3;
+    color: #ffff;
+    font-weight: 500;
+    border: 1px solid #40A2E3;
+}
+
+.btn-submit:hover{
+    background-color: transparent;
+    border: 1px solid #40A2E3;
+    transition: 0.3s;
+    color: #40A2E3;
+}
+
+.cover-forgot-pw{
+    background-color: #c5c4c4;
+    margin-bottom: -33px !important;
+    width: 450px !important;
+    margin-left: -49px !important;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* 
+40A2E3 = biru
+D9D9D9 = putih */
