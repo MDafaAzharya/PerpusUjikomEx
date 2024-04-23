@@ -32,6 +32,11 @@ body{
     font-size: 16px;
 }
 
+.btn-category:hover{
+    color: #3F3D56;
+   
+}
+
 .btn-category.active{
     color: #3F3D56;
     font-weight: 500;

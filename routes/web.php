@@ -34,6 +34,7 @@ Route::get('/bookmark', [App\Http\Controllers\BookmarkController::class, 'index'
 
 
 //Petugas
+Route::middleware(['auth','petugas'])->group(function () {
 Route::get('/dashboard-petugas', [App\Http\Controllers\Dashboard\Petugas\DashboardController::class, 'index'])->name('dashboard-petugas');
 Route::get('/databuku-petugas', [App\Http\Controllers\Dashboard\Petugas\DataBukuController::class, 'index'])->name('databuku-petugas');
 Route::post('databuku-petugas-store', [App\Http\Controllers\Dashboard\Petugas\DataBukuController::class, 'store'])->name('databuku-petugas-store');
@@ -41,5 +42,6 @@ Route::get('databuku-petugas-datatable', [App\Http\Controllers\Dashboard\Petugas
 Route::get('databuku-petugas-edit/{id}', [App\Http\Controllers\Dashboard\Petugas\DataBukuController::class, 'edit'])->name('databuku-petugas-edit');
 Route::post('databuku-petugas-update', [App\Http\Controllers\Dashboard\Petugas\DataBukuController::class, 'update'])->name('databuku-petugas-update');
 Route::get('databuku-petugas-destroy/{id}', [App\Http\Controllers\Dashboard\Petugas\DataBukuController::class, 'destroy'])->name('databuku-petugas-destroy');
+});
 
 

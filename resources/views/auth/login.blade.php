@@ -14,7 +14,7 @@
                     <h3 class="fw-bold text-center"> Login</h3>
                 </div>
                 <div class="card-body px-5">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form id="formAuthentication" class="mb-3" action="{{ route('login') }}" method="POST">
                         @csrf
                         <div class="row mb-3">
                             <label for="email" class="col-md-12  col-form-label">{{ __('Email Address') }}</label>
