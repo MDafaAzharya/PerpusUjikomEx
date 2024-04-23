@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\BukuModel;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Kategori;
-
+use App\Libraries\PDF;
 
 class DataBukuController extends Controller
 {
@@ -144,5 +144,34 @@ class DataBukuController extends Controller
           })
         ->rawColumns(['file_buku', 'action'])
         ->make(true);
+    }
+
+    public function print()
+    {
+        $books = BukuModel::all();
+       
+
+        // Define table header
+        $header = array('Judul', 'Penulis', 'Kategori' ,'Cover');
+
+        // Define table data
+        $data = array();
+        foreach ($books as $book) {
+            $imagePath = 'storage/cover/' . $book->cover;
+            $rowData = array($book->judul_buku, $book->penulis, $book->change_kategori->kategori, $imagePath);
+            array_push($data, $rowData);
+        }
+
+        // Create PDF instance
+        $pdf = new PDF();
+        $pdf->AddPage();
+        $pdf->SetFont('Arial', 'B', 16);
+
+        // Create book table
+        $pdf->BookTable($header, $data);
+
+        // Output PDF
+        $pdf->Output();
+        exit;
     }
 }

@@ -42,6 +42,7 @@ Route::get('databuku-petugas-datatable', [App\Http\Controllers\Dashboard\Petugas
 Route::get('databuku-petugas-edit/{id}', [App\Http\Controllers\Dashboard\Petugas\DataBukuController::class, 'edit'])->name('databuku-petugas-edit');
 Route::post('databuku-petugas-update', [App\Http\Controllers\Dashboard\Petugas\DataBukuController::class, 'update'])->name('databuku-petugas-update');
 Route::get('databuku-petugas-destroy/{id}', [App\Http\Controllers\Dashboard\Petugas\DataBukuController::class, 'destroy'])->name('databuku-petugas-destroy');
+Route::get('databuku-petugas-print', [App\Http\Controllers\Dashboard\Petugas\DataBukuController::class, 'print'])->name('databuku-petugas-print');
 });
 
 

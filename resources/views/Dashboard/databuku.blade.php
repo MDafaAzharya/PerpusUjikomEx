@@ -12,7 +12,10 @@
                 <h3 class="fw-normal title-page">Dashboard /</h3>
                 <h3 class="fw-semibold title-page">Data Buku</h3>
             </div>
-            <button class="btn px-3 btn-tambahdata" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Tambah Data</button>
+            <div>
+                <button class="btn px-3 btn-tambahdata" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Tambah Data</button>
+                <a href="{{route('databuku-petugas-print')}}" class="btn px-3 btn-print">Cetak Laporan Buku</a>
+            </div>
         </div>
         <hr class="line border border-2 rounded-bg opacity-100">
     </div>
